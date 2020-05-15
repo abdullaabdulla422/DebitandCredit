@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+  >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="vertical"
+        android:id="@+id/layout"
+        android:layout_margin="5dp"
+        android:layout_gravity="center"
+        android:background="@color/material_blue_800_new"
+        android:gravity="center"
+        tools:ignore="UnusedAttribute">
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:weightSum="3"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                >
+
+
+
+
+                <TextView
+                    android:id="@+id/date"
+                    android:text="Date"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="13dp"
+                    android:textStyle="bold"
+                    android:textColor="#fff"
+                    android:layout_weight="1"
+
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                >
+
+
+                <TextView
+                    android:id="@+id/customer_name"
+                    android:text="Customer"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="13dp"
+                    android:textColor="#fff"
+
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                >
+
+                <TextView
+                    android:id="@+id/customer_amt"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Amount"
+                    android:textSize="13dp"
+                    android:textColor="#fff"
+
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+
+                    android:gravity="left"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout"
+        android:layout_margin="5dp"
+        android:id="@+id/list_party_items"/>
+<com.google.android.material.floatingactionbutton.FloatingActionButton
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentRight="true"
+    android:id="@+id/fab_add_party"
+    android:layout_alignParentBottom="true"
+    android:background="@drawable/editable_background"
+    android:layout_margin="10dp"
+    android:src="@drawable/ic_add_black_24dp"
+    />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/btnsort"
+        android:background="@drawable/editable_background"
+        android:text="sort"
+        android:textColor="@color/whitecolor"
+
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:id="@+id/btnTotal"
+        android:background="@drawable/editable_background"
+        android:text="Total"
+        android:textColor="@color/whitecolor"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+
+        />
+
+
+</RelativeLayout>

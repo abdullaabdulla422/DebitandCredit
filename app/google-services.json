@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1053365057789",
+    "firebase_url": "https://abufirebase.firebaseio.com",
+    "project_id": "abufirebase",
+    "storage_bucket": "abufirebase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1053365057789:android:b7f339bbf9c5de84e36694",
+        "android_client_info": {
+          "package_name": "com.example.dm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1053365057789-v5ljb49ae2e27868h8hj2m1ai4q97ulh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyByfxN-oiodrggOuH6syAlfugMmYkkqVu4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1053365057789-v5ljb49ae2e27868h8hj2m1ai4q97ulh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

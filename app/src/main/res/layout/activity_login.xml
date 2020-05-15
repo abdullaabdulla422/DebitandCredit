@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#007AE0"
+        android:text="Login"
+        android:textColor="#fff"
+        android:textSize="16dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="40dp"
+
+        >
+        <RelativeLayout
+            android:id="@+id/relative_layout"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="20dp"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageView
+                android:layout_width="250dp"
+                android:layout_height="90dp"
+                android:id="@+id/img"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_accessibility_black_24dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DMI Garments"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:textSize="21dp"
+                android:textColor="#3949AB"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/img"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relative_layout"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/layout"
+            android:orientation="vertical">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:drawableLeft="@drawable/ic_mail_outline_black_24dp"
+                android:drawablePadding="15dp"
+                android:hint="Enter username"
+                android:maxLength="15"
+                android:singleLine="true"
+
+                android:id="@+id/edt_username"
+                android:background="@android:color/transparent"
+                android:paddingLeft="15dp"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:drawableLeft="@drawable/ic_lock_black_24dp"
+                android:paddingLeft="15dp"
+                android:maxLength="15"
+                android:singleLine="true"
+
+                android:background="@android:color/transparent"
+                android:drawablePadding="15dp"
+                android:inputType="textPassword"
+                android:id="@+id/edt_pwd"
+                android:hint="Password"
+
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:textSize="16dp"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1.7"
+                    android:textStyle="bold"
+                    android:paddingLeft="15dp"
+                    android:text="Remember Me"/>
+
+                <ToggleButton
+                    android:id="@+id/remember_me"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight=".3"
+
+                    android:background="@drawable/bgtoggle"
+                    android:textOn=""
+                    android:textOff=""
+                    android:gravity="end"
+                    />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linear_layout"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/editable_background"
+                android:text="SIGN IN"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:id="@+id/btn_login"
+                android:textColor="#fff" />
+
+
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>
